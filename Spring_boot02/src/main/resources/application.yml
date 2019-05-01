@@ -1,0 +1,13 @@
+server:
+  port: 9090
+#连接池的配置
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc:oracle:thin:@192.168.25.131:1521:XE
+    username: root
+    password: root
+#mybatis配置mapper.xml文件位置以及包扫描
+mybatis:
+  mapper-locations: classpath*:mapper/*.xml  #mapper文件扫描
+  type-aliases-package: com.hf.springboot.pojo  #别名扫描
