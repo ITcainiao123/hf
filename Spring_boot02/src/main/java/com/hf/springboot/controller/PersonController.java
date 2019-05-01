@@ -16,7 +16,6 @@ public class PersonController {
     //查询person所有数据
     @RequestMapping("findAll")
     public List<Person> findAll(){
-
         return personService.findAll();
     }
 }
