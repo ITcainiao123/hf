@@ -13,6 +13,7 @@ import java.util.List;
 public class PersonController {
     @Autowired
     private PersonService personService;
+    //查询person所有数据
     @RequestMapping("findAll")
     public List<Person> findAll(){
 
